@@ -5,11 +5,12 @@
     left: 0;
     height: 100vh;
     width: 250px;
-    background-color: #198754;
+    background-color: #529952;
     padding-top: 20px;
     z-index: 1010;  /* Higher than default content */
     transition: transform 0.3s ease-in-out;
     transform: translateX(-250px);
+    min-height: 100%;
 }
 
 .sidebar.show {

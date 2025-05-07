@@ -34,20 +34,12 @@
     <i class="fa fa-bars"></i>
     </button>
 
-    <aside class="sidebar bg-success text-white">
+    <aside class="sidebar text-white">
 
     <div class="d-flex flex-column p-3">
-        <a
-        href="/"
-        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
-        >
-        <img
-            src="./img/real_logo.png"
-            alt="ResponSeek Logo"
-            height="30"
-            class="me-2"
-        />
-        <span class="fs-4">ResponSeek</span>
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <img src="./img/real_logo.png" alt="ResponSeek Logo" height="30" class="me-2">
+            <span class="fs-4">ResponSeek</span>
         </a>
         <hr />
         <ul class="nav nav-pills flex-column mb-auto">
@@ -58,7 +50,7 @@
             </a>
         </li>
         <li>
-            <a href="#" class="nav-link text-white">
+            <a href="rankings.html" class="nav-link text-white">
             <i class="fa-solid fa-list-ol me-2"></i>
             Rankings
             </a>
@@ -70,7 +62,7 @@
             </a>
         </li>
         <li>
-            <a href="#" class="nav-link text-white">
+            <a href="contact.html" class="nav-link text-white">
             <i class="fa-solid fa-envelope me-2"></i>
             Contact Us
             </a>
@@ -272,29 +264,25 @@
     </main>
 
     <script>
-    const toggleButton = document.querySelector(".toggle-button");
-    const sidebar = document.querySelector(".sidebar");
-    const mainContent = document.querySelector(".main-content");
+        const toggleButton = document.querySelector('.toggle-button');
+        const sidebar = document.querySelector('.sidebar');
+        const mainContent = document.querySelector('.main-content');
 
-    toggleButton.addEventListener("click", () => {
-        sidebar.classList.toggle("show");
-        mainContent.classList.toggle("shifted");
-    });
+        toggleButton.addEventListener('click', () => {
+            sidebar.classList.toggle('show');
+            toggleButton.classList.toggle('shifted');
+            mainContent.classList.toggle('shifted');
+            toggleButton.style.display = 'none'; // This line hides the button
+        });
 
-      // Optional: Close sidebar when clicking outside on smaller screens
-    document.addEventListener("click", (event) => {
-        if (
-        window.innerWidth <= 768 &&
-        sidebar.classList.contains("show") &&
-        !sidebar.contains(event.target) &&
-        !toggleButton.contains(event.target)
-        ) {
-        sidebar.classList.remove("show");
-        mainContent.classList.remove("shifted");
-        }
-    });
-
-
+        // Optional: Close sidebar when clicking outside on smaller screens
+        document.addEventListener('click', (event) => {
+            if (window.innerWidth <= 768 && sidebar.classList.contains('show') && !sidebar.contains(event.target) && !toggleButton.contains(event.target)) {
+                sidebar.classList.remove('show');
+                mainContent.classList.remove('shifted');
+                toggleButton.style.display = 'block'
+            }
+        });
     </script>
 
     <script

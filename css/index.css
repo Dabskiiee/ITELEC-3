@@ -4,10 +4,11 @@
     left: 0;
     height: 100vh;
     width: 250px;
-    background-color: #f8f9fa;
+    background-color: #529952;
     padding-top: 20px;
     z-index: 1010; /* Higher than default content */
     transition: transform 0.3s ease-in-out; /* For smooth toggle */
+    min-height: 100%;
 }
 
 .sidebar.collapsed {
@@ -18,9 +19,15 @@
     position: relative; /* Required for overlay */
     padding-left: 15%;
     padding-right: 10%;
+    padding-top: 2.5rem;
     transition: transform 0.3s ease-in-out;
     width: 100%;
     background-color: white;
+}
+
+.card{
+    width:auto;
+    height: auto;
 }
 
 /* Overlay effect */
