@@ -16,7 +16,8 @@
 
 .main-content {
     position: relative; /* Required for overlay */
-    padding: 20%;
+    padding-left: 15%;
+    padding-right: 10%;
     transition: transform 0.3s ease-in-out;
     width: 100%;
     background-color: white;
