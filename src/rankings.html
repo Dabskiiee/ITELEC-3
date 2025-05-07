@@ -24,7 +24,7 @@
     </button>
 
     <!-- Sidebar -->
-    <aside class="sidebar bg-success text-white">
+    <aside class="sidebar text-white">
         <div class="d-flex flex-column p-3">
             <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                 <img src="./img/real_logo.png" alt="ResponSeek Logo" height="30" class="me-2">
@@ -87,27 +87,27 @@
                 <div class="carousel-inner text-center rounded shadow">
                     <div class="carousel-item active">
                         <div class="rank-box text-white p-4 rounded d-flex flex-column align-items-center" style="background-color: #FFD700;">
-                            <img src="./img/res_6.jpeg" class="rounded-circle profile-icon mb-3" alt="Profile picture of Tralala">
+                            <img src="./img/Camell.png" class="rounded-circle profile-icon mb-3" alt="Profile picture of Tralala">
                             <h2 class="mb-1">Rank 1</h2>
-                            <h4 class="fw-bold">Tralala</h4>
+                            <h4 class="fw-bold">Camell</h4>
                             <p><i class="fa-solid fa-star me-1"></i> <strong>Points:</strong> 300</p>
                             <p><i class="fa-solid fa-clipboard-check me-1"></i> <strong>Surveys Answered:</strong> 10</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="rank-box text-white p-4 rounded d-flex flex-column align-items-center" style="background-color: #C0C0C0;">
-                            <img src="./img/res_2.jpeg" class="rounded-circle profile-icon mb-3" alt="Profile">
+                            <img src="./img/Kalbo.png" class="rounded-circle profile-icon mb-3" alt="Profile">
                             <h2 class="mb-1">Rank 2</h2>
-                            <h4 class="fw-bold">Jessica J.</h4>
+                            <h4 class="fw-bold">Kalbo123</h4>
                             <p><i class="fa-solid fa-star me-1"></i> <strong>Points:</strong> 280</p>
                             <p><i class="fa-solid fa-clipboard-check me-1"></i> <strong>Surveys Answered:</strong> 9</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="rank-box text-white p-4 rounded d-flex flex-column align-items-center" style="background-color: #cd7f32;">
-                            <img src="./img/res_5.jpeg" class="rounded-circle profile-icon mb-3" alt="Profile">
+                            <img src="./img/Edwardo.png" class="rounded-circle profile-icon mb-3" alt="Profile">
                             <h2 class="mb-1">Rank 3</h2>
-                            <h4 class="fw-bold">Cardo</h4>
+                            <h4 class="fw-bold">Edwardo Versoza</h4>
                             <p><i class="fa-solid fa-star me-1"></i> <strong>Points:</strong> 260</p>
                             <p><i class="fa-solid fa-clipboard-check me-1"></i> <strong>Surveys Answered:</strong> 8</p>
                         </div>
@@ -130,28 +130,28 @@
             <div id="weeklyCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner text-center rounded shadow">
                     <div class="carousel-item active">
-                        <div class="rank-box text-white p-4 rounded d-flex flex-column align-items-center" style="background-color: #FFD700;">
-                            <img src="./img/res_1.jpeg" class="rounded-circle profile-icon mb-3" alt="Profile">
+                        <div class="rank-box text-white p-4 rounded d-flex flex-column align-items-center" style="background-color: #FFD700; ">
+                            <img src="./img/GoldenBall.png" class="rounded-circle profile-icon mb-3" alt="Profile">
                             <h2 class="mb-1">Rank 1</h2>
-                            <h4 class="fw-bold">Tatay Digong</h4>
+                            <h4 class="fw-bold">GoldenBall271</h4>
                             <p><i class="fa-solid fa-star me-1"></i> <strong>Points:</strong> 1200</p>
                             <p><i class="fa-solid fa-clipboard-check me-1"></i> <strong>Surveys Answered:</strong> 45</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="rank-box text-white p-4 rounded d-flex flex-column align-items-center" style="background-color: #C0C0C0;">
-                            <img src="./img/res_4.jpeg" class="rounded-circle profile-icon mb-3" alt="Profile">
+                            <img src="./img/Gujo.png" class="rounded-circle profile-icon mb-3" alt="Profile">
                             <h2 class="mb-1">Rank 2</h2>
-                            <h4 class="fw-bold">Candice Trillion</h4>
+                            <h4 class="fw-bold">Gujo Amanai >_o </h4>
                             <p><i class="fa-solid fa-star me-1"></i> <strong>Points:</strong> 1100</p>
                             <p><i class="fa-solid fa-clipboard-check me-1"></i> <strong>Surveys Answered:</strong> 43</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="rank-box text-white p-4 rounded d-flex flex-column align-items-center" style="background-color: #cd7f32;">
-                            <img src="./img/res_3.jpeg" class="rounded-circle profile-icon mb-3" alt="Profile">
+                            <img src="./img/Jinhsi.png" class="rounded-circle profile-icon mb-3" alt="Profile">
                             <h2 class="mb-1">Rank 3</h2>
-                            <h4 class="fw-bold">Just Joking</h4>
+                            <h4 class="fw-bold">DaDRAGONSlAYUR4ever</h4>
                             <p><i class="fa-solid fa-star me-1"></i> <strong>Points:</strong> 1000</p>
                             <p><i class="fa-solid fa-clipboard-check me-1"></i> <strong>Surveys Answered:</strong> 40</p>
                         </div>
@@ -174,11 +174,24 @@
 
     <!-- Sidebar toggle JS -->
     <script>
-        document.querySelector('.toggle-button').addEventListener('click', () => {
-            const sidebar = document.querySelector('.sidebar');
-            const mainContent = document.querySelector('.main-content');
-            sidebar.classList.toggle('hidden');
-            mainContent.classList.toggle('no-sidebar');
+        const toggleButton = document.querySelector('.toggle-button');
+        const sidebar = document.querySelector('.sidebar');
+        const mainContent = document.querySelector('.main-content');
+
+        toggleButton.addEventListener('click', () => {
+            sidebar.classList.toggle('show');
+            toggleButton.classList.toggle('shifted');
+            mainContent.classList.toggle('shifted');
+            toggleButton.style.display = 'none'; // This line hides the button
+        });
+
+        // Optional: Close sidebar when clicking outside on smaller screens
+        document.addEventListener('click', (event) => {
+            if (window.innerWidth <= 768 && sidebar.classList.contains('show') && !sidebar.contains(event.target) && !toggleButton.contains(event.target)) {
+                sidebar.classList.remove('show');
+                mainContent.classList.remove('shifted');
+                toggleButton.style.display = 'block'
+            }
         });
     </script>
 
