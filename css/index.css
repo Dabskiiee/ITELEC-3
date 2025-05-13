@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -17,12 +21,14 @@
 
 .main-content {
     position: relative; /* Required for overlay */
-    padding-left: 15%;
+    padding-left: 2.5%;/* Remove the padding-left that was causing issues */
     padding-right: 10%;
     padding-top: 2.5rem;
     transition: transform 0.3s ease-in-out;
-    width: 100%;
+    width: 90%; /* Let it take full available width */
     background-color: white;
+    /* Add margin-left to push it to the right of the sidebar */
+    margin-left: 250px; /* Equal to the sidebar's width */
 }
 
 .card{
@@ -77,14 +83,11 @@
     z-index: 9999;
 }
 
-
-
 .popup-overlay.show {
     display: flex;
     animation: fadeIn 0.3s ease-in-out;
-    
-}
 
+}
 
 .popup-box {
     background-color: #d8f3da;
@@ -111,7 +114,9 @@
     }
 
     .main-content {
-        margin-left: 0;
+        margin-left: 0; /* No left margin on mobile */
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .main-content.shifted {

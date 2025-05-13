@@ -39,6 +39,32 @@ body{
     border-radius: 10px;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-item {
+    padding: 0 20px; /* Give arrows room inside the item */
+}
+
+
 
 /* Optional: Restrict max width for large screens */
 .carousel {
@@ -49,6 +75,7 @@ body{
 /* Adjust carousel items */
 .carousel-item h2 {
     text-align: center;
+    min-width: auto;
 }
 
 /* Specific styling for profile images in rankings */
@@ -139,13 +166,22 @@ body{
     .main-content.shifted::before {
         background-color: rgba(0, 0, 0, 0.5); /* Slightly darker overlay on mobile */
     }
+
+
+}
+
+.rank-box {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    padding: auto;
 }
 
 
 /* Adjust for small screens */
 @media (max-width: 768px) {
     .carousel-inner {
-        aspect-ratio: 16 / 9; /* Enforce 16:9 ratio on mobile */
+        aspect-ratio: 16 / 9 , auto; /* Enforce 16:9 ratio on mobile */
     }
 
     .carousel-inner img {
@@ -162,6 +198,21 @@ body{
     .carousel-inner img {
         object-fit: contain; /* Ensure images fit correctly */
     }
+
+@media (max-width: 768px) {
+    .main-content.shifted {
+        margin-left: 0;
+    }
+
+    .sidebar {
+        width: 80%;
+    }
+
+    .toggle-button.shifted {
+        left: 260px;
+    }
+}
+
 
 
 }
